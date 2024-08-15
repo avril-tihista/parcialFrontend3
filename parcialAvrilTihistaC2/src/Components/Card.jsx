@@ -1,8 +1,11 @@
+import cardStyles from "../Styles/Card.module.css"
 
-
-const Card = () => {
+const Card = ({customer}) => {
   return (
-    <div>Hola, soy una tarjeta</div>
+    <div className={cardStyles.cardContainer}>
+        <h3>Hola! Tu anime favorito es: {customer.anime}</h3>
+        <h3>Hemos visto que tu personaje favorito es: {customer.character}</h3>
+    </div>
   )
 }
 
